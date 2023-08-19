@@ -6,12 +6,9 @@ import {Rating} from "./components/Rating/Rating";
 function App() {
     return (
         <div>
-            {/*<PageTitle title={'This is APP component'}/>*/}
-            {/*<PageTitle title={'users'}/>*/}
-            {/*Article 1*/}
+
             <Accordion titleValue={'Menu'} collapsed={false}/>
             <Accordion titleValue={'Users'} collapsed={false}/>
-
         </div>
     );
 }
