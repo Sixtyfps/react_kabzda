@@ -5,11 +5,12 @@ import {OnOff} from "./components/OnOff/OnOff";
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 import Accordion from "./components/Accordion/Accordion";
+import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 
 function App() {
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
     let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(true)
-    let[on, setOn] = useState(false)
+    let [on, setOn] = useState(false)
 
     return (
         <div className={"App"}>
@@ -20,14 +21,18 @@ function App() {
 
             <UncontrolledRating/>
 
-            <Accordion callBack={setAccordionCollapsed}
+            <Accordion callBack={() => {
+                setAccordionCollapsed(!accordionCollapsed)
+            }}
                        titleValue={"Menu"}
                        collapsed={accordionCollapsed}
             />
 
-            <OnOff callBack={setOn}
-                    state={on}
-            />
+            <UncontrolledOnOff onChange={setOn}/> {on.toString()}
+
+            {/*<OnOff on={on}*/}
+            {/*       callBack={setOn}*/}
+            {/*/>*/}
             {/*<UncontrolledAccordion titleValue={'Menu'} />*/}
             {/*<Rating value={0}/>*/}
             {/*<Rating value={1}/>*/}
