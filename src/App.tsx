@@ -36,8 +36,6 @@ function App() {
             {/*<UncontrolledAccordion titleValue={'Menu'} />*/}
             {/*<Rating value={0}/>*/}
             {/*<Rating value={1}/>*/}
-            {/*<Rating value={2}/>*/}
-            {/*<Rating value={3}/>*/}
             {/*<Rating value={4}/>*/}
             {/*<UncontrolledAccordion titleValue={'Users'} />*/}
 
