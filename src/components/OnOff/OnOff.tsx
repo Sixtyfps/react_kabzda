@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 type PropsType = {
     on: boolean
-    callBack:(on: boolean)=>void
+    onChange:(on: boolean)=>void
 }
 
 export const OnOff = (props: PropsType) => {
@@ -37,8 +37,8 @@ export const OnOff = (props: PropsType) => {
 
     return (
         <div>
-            <div style={onStyle} onClick={()=>props.callBack(true)} >On</div>
-            <div style={offStyle} onClick={()=>props.callBack(false)} >Off</div>
+            <div style={onStyle} onClick={()=>props.onChange(true)} >On</div>
+            <div style={offStyle} onClick={()=>props.onChange(false)} >Off</div>
             <div style={indicatorStyle}></div>
         </div>
     );
