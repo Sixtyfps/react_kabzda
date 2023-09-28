@@ -17,14 +17,14 @@ function App() {
                     onClick={setRatingValue}
             />
 
-            <UncontrolledRating/>
+            {/*<UncontrolledRating/>*/}
 
-            <Accordion callBack={() => {
-                setAccordionCollapsed(!accordionCollapsed)
-            }}
-                       titleValue={"Menu"}
-                       collapsed={accordionCollapsed}
-            />
+            {/*<Accordion callBack={() => {*/}
+            {/*    setAccordionCollapsed(!accordionCollapsed)*/}
+            {/*}}*/}
+            {/*           titleValue={"Menu"}*/}
+            {/*           collapsed={accordionCollapsed}*/}
+            {/*/>*/}
 
             <UncontrolledOnOff onChange={setOn}/> {on.toString()}
 
