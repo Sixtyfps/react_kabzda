@@ -5,11 +5,7 @@ type PropsType = {
     onChange:(on: boolean)=>void
 }
 
-export const OnOff = (props: PropsType) => {
-
-
-
-
+export const OnOffSecret = (props: PropsType) => {
     const onStyle = {
         width: "30px",
         height: "20px",
@@ -43,3 +39,5 @@ export const OnOff = (props: PropsType) => {
         </div>
     );
 };
+
+export const OnOff = React.memo(OnOffSecret)

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Select} from "./Select";
-import {action} from "@storybook/addon-actions";
+
 
 
 export default {
@@ -8,7 +8,7 @@ export default {
     component: Select
 }
 
-export const WithValue = () => {
+export const SelectWithValue = () => {
     const [value, setValue] = useState('2')
 
     return <>
@@ -23,7 +23,7 @@ export const WithValue = () => {
 }
 
 
-export const WithoutValue = () => {
+export const SelectWithoutValue = () => {
     const [value, setValue] = useState(null)
     return <>
         <Select onChange={setValue}
